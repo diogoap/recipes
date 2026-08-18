@@ -1,0 +1,1102 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Ingredient quantities, AH.nl shopping links, seasoning substitute and kamado preparation for mini Christmas stollen with cranberry compote and citrus cream.">
+  <meta name="color-scheme" content="light">
+  <title>Mini Christmas Stollen with Cranberry Compote and Citrus Cream</title>
+  <style>
+:root {
+  color-scheme: light;
+  --page: #f8f3ec;
+  --surface: #fffdf9;
+  --surface-2: #f1e9df;
+  --ink: #201814;
+  --muted: #75685f;
+  --line: rgba(32, 24, 20, 0.13);
+  --accent: #9b3e2a;
+  --accent-2: #552240;
+  --accent-soft: rgba(155, 62, 42, 0.10);
+  --gold: #c58b3e;
+  --sage: #536454;
+  --hero-start: #21110f;
+  --hero-end: #4a1835;
+  --shadow: 0 24px 70px rgba(45, 28, 20, 0.12);
+  --radius: 26px;
+  --content: 1180px;
+  --display: "Arial Narrow", "Aptos Narrow", "Helvetica Neue", Impact, sans-serif;
+  --body: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --serif: Georgia, "Times New Roman", serif;
+}
+
+body.theme-dessert {
+  --page: #fff8ef;
+  --surface: #fffdf8;
+  --surface-2: #f9e9df;
+  --ink: #2d171c;
+  --muted: #7b6267;
+  --line: rgba(74, 23, 33, 0.13);
+  --accent: #ad2440;
+  --accent-2: #dc7436;
+  --accent-soft: rgba(173, 36, 64, 0.10);
+  --gold: #c5903d;
+  --sage: #6f784b;
+  --hero-start: #3a0d18;
+  --hero-end: #9a1839;
+  --shadow: 0 24px 70px rgba(92, 24, 40, 0.14);
+}
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  margin: 0;
+  background:
+    radial-gradient(circle at 8% 2%, rgba(197, 139, 62, 0.12), transparent 20rem),
+    var(--page);
+  color: var(--ink);
+  font-family: var(--body);
+  font-size: 16px;
+  line-height: 1.65;
+  text-rendering: optimizeLegibility;
+}
+a { color: var(--accent); text-decoration-thickness: 1.5px; text-underline-offset: 0.18em; }
+a:hover { color: var(--accent-2); }
+
+.hero {
+  position: relative;
+  min-height: 575px;
+  overflow: hidden;
+  color: #fff;
+  background:
+    linear-gradient(115deg, rgba(10, 7, 6, 0.15), rgba(10, 7, 6, 0.02)),
+    linear-gradient(135deg, var(--hero-start), var(--hero-end));
+  isolation: isolate;
+}
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(circle at 18% 16%, rgba(255,255,255,.12) 0 1px, transparent 2px),
+    radial-gradient(circle at 24% 72%, rgba(255,255,255,.08) 0 1px, transparent 2px),
+    linear-gradient(90deg, transparent, rgba(255,255,255,.03), transparent);
+  background-size: 33px 33px, 49px 49px, auto;
+  opacity: .7;
+  z-index: -1;
+}
+.hero-inner {
+  width: min(var(--content), calc(100% - 40px));
+  margin: 0 auto;
+  min-height: 575px;
+  display: grid;
+  grid-template-columns: minmax(0, 1.1fr) minmax(360px, .9fr);
+  gap: 46px;
+  align-items: center;
+  padding: 76px 0 68px;
+}
+.hero-copy { position: relative; z-index: 2; }
+.eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  margin: 0 0 20px;
+  color: rgba(255,255,255,.78);
+  font-size: .78rem;
+  font-weight: 800;
+  letter-spacing: .16em;
+  text-transform: uppercase;
+}
+.eyebrow::before {
+  content: "";
+  width: 42px;
+  height: 2px;
+  background: var(--gold);
+}
+.hero h1 {
+  max-width: 880px;
+  margin: 0;
+  font-family: var(--display);
+  font-stretch: condensed;
+  font-size: clamp(3.2rem, 6.4vw, 6.7rem);
+  line-height: .88;
+  letter-spacing: -.045em;
+  text-transform: uppercase;
+  text-wrap: balance;
+}
+.hero .deck {
+  max-width: 700px;
+  margin: 28px 0 0;
+  color: rgba(255,255,255,.82);
+  font-family: var(--serif);
+  font-size: clamp(1.08rem, 1.6vw, 1.35rem);
+}
+.chip-row { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 28px; }
+.chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  min-height: 38px;
+  padding: 8px 13px;
+  border: 1px solid rgba(255,255,255,.18);
+  border-radius: 999px;
+  background: rgba(255,255,255,.08);
+  color: rgba(255,255,255,.91);
+  font-size: .82rem;
+  font-weight: 750;
+  backdrop-filter: blur(8px);
+}
+.chip svg { width: 17px; height: 17px; }
+.hero-actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 30px; }
+.button {
+  appearance: none;
+  border: 0;
+  border-radius: 999px;
+  padding: 12px 18px;
+  font: inherit;
+  font-size: .88rem;
+  font-weight: 800;
+  cursor: pointer;
+  transition: transform .2s ease, box-shadow .2s ease, background .2s ease;
+  text-decoration: none;
+}
+.button:hover { transform: translateY(-1px); }
+.button-primary { background: #fff; color: var(--hero-start); box-shadow: 0 10px 30px rgba(0,0,0,.18); }
+.button-secondary { color: #fff; border: 1px solid rgba(255,255,255,.22); background: rgba(255,255,255,.08); }
+.hero-art { align-self: stretch; display: grid; place-items: center; min-height: 420px; }
+.hero-art svg { width: min(100%, 520px); max-height: 520px; filter: drop-shadow(0 30px 40px rgba(0,0,0,.28)); }
+
+.utility {
+  position: sticky;
+  top: 0;
+  z-index: 30;
+  border-bottom: 1px solid var(--line);
+  background: color-mix(in srgb, var(--surface) 92%, transparent);
+  backdrop-filter: blur(18px);
+}
+.utility-inner {
+  width: min(var(--content), calc(100% - 40px));
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 18px;
+  min-height: 66px;
+}
+.toc { display: flex; align-items: center; gap: 16px; overflow-x: auto; scrollbar-width: none; }
+.toc::-webkit-scrollbar { display: none; }
+.toc a {
+  flex: 0 0 auto;
+  color: var(--muted);
+  font-size: .78rem;
+  font-weight: 800;
+  letter-spacing: .04em;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.toc a:hover { color: var(--accent); }
+.serving-control { display: flex; align-items: center; gap: 7px; flex: 0 0 auto; }
+.serving-label { color: var(--muted); font-size: .75rem; font-weight: 800; text-transform: uppercase; letter-spacing: .08em; }
+.serving-button {
+  appearance: none;
+  border: 1px solid var(--line);
+  background: var(--surface);
+  color: var(--ink);
+  min-width: 34px;
+  height: 34px;
+  border-radius: 999px;
+  font: inherit;
+  font-size: .78rem;
+  font-weight: 850;
+  cursor: pointer;
+}
+.serving-button[aria-pressed="true"] { background: var(--accent); color: #fff; border-color: var(--accent); }
+
+main {
+  width: min(var(--content), calc(100% - 40px));
+  margin: 0 auto;
+  padding: 58px 0 100px;
+  counter-reset: section;
+}
+.validation-card {
+  display: grid;
+  grid-template-columns: .72fr 1.28fr;
+  gap: 26px;
+  align-items: center;
+  margin: 0 0 34px;
+  padding: 28px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background:
+    linear-gradient(135deg, var(--accent-soft), transparent 54%),
+    var(--surface);
+  box-shadow: var(--shadow);
+}
+.validation-kicker {
+  margin: 0 0 8px;
+  color: var(--accent);
+  font-size: .78rem;
+  font-weight: 850;
+  letter-spacing: .13em;
+  text-transform: uppercase;
+}
+.validation-card h2 {
+  margin: 0;
+  font-family: var(--display);
+  font-size: clamp(2.1rem, 3.6vw, 3.6rem);
+  line-height: .95;
+  letter-spacing: -.03em;
+  text-transform: uppercase;
+}
+.validation-card p { margin: 14px 0 0; color: var(--muted); }
+.validation-card .table-shell { margin: 0; }
+.validation-card table { min-width: 0; }
+
+.content-section {
+  counter-increment: section;
+  margin-top: 30px;
+  padding: clamp(24px, 4vw, 48px);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--surface);
+  box-shadow: 0 14px 44px rgba(48, 30, 22, .07);
+}
+.content-section > h2 {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr);
+  align-items: end;
+  gap: 16px;
+  margin: 0 0 30px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid var(--line);
+  font-family: var(--display);
+  font-size: clamp(2rem, 4vw, 4rem);
+  line-height: .92;
+  letter-spacing: -.035em;
+  text-transform: uppercase;
+}
+.content-section > h2::before {
+  content: counter(section, decimal-leading-zero);
+  color: var(--accent);
+  font-family: var(--serif);
+  font-size: .95rem;
+  font-style: italic;
+  letter-spacing: normal;
+}
+h3 {
+  margin: 34px 0 15px;
+  color: var(--accent-2);
+  font-family: var(--display);
+  font-size: clamp(1.35rem, 2vw, 2rem);
+  line-height: 1.05;
+  letter-spacing: -.015em;
+  text-transform: uppercase;
+}
+h4 { margin: 28px 0 10px; font-size: 1.05rem; }
+p { max-width: 82ch; }
+.content-section > p:first-of-type { font-size: 1.03rem; }
+.note {
+  max-width: none;
+  margin: 20px 0;
+  padding: 16px 18px 16px 20px;
+  border-left: 4px solid var(--gold);
+  border-radius: 0 14px 14px 0;
+  background: linear-gradient(90deg, rgba(197,139,62,.13), transparent);
+  color: color-mix(in srgb, var(--ink) 76%, var(--muted));
+}
+hr { border: 0; height: 1px; background: var(--line); margin: 38px 0; }
+strong { font-weight: 820; }
+em { color: var(--accent-2); }
+
+.table-shell {
+  position: relative;
+  overflow: auto;
+  margin: 18px 0 26px;
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  background: var(--surface);
+  box-shadow: inset 0 1px rgba(255,255,255,.6);
+  scrollbar-width: thin;
+  outline: none;
+}
+.table-shell:focus-visible { box-shadow: 0 0 0 3px var(--accent-soft); }
+table {
+  width: 100%;
+  min-width: 760px;
+  border-collapse: separate;
+  border-spacing: 0;
+  font-size: .92rem;
+}
+table.product-table { min-width: 960px; }
+table.compact-table { min-width: 460px; }
+th, td {
+  padding: 13px 14px;
+  border-right: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+  vertical-align: top;
+  text-align: left;
+  transition: opacity .18s ease, background .18s ease, color .18s ease;
+}
+th:last-child, td:last-child { border-right: 0; }
+tbody tr:last-child td, tbody tr:last-child th { border-bottom: 0; }
+thead th {
+  position: sticky;
+  top: 0;
+  z-index: 3;
+  background: color-mix(in srgb, var(--surface-2) 78%, #fff);
+  color: var(--ink);
+  font-size: .76rem;
+  font-weight: 850;
+  letter-spacing: .035em;
+  text-transform: uppercase;
+}
+th.label-col, td.label-col {
+  position: sticky;
+  left: 0;
+  z-index: 2;
+  min-width: 215px;
+  background: var(--surface);
+  font-weight: 700;
+}
+thead th.label-col { z-index: 4; background: color-mix(in srgb, var(--surface-2) 78%, #fff); }
+tbody tr:nth-child(even) td:not(.label-col) { background: rgba(119, 94, 76, .025); }
+.product-table td.label-col { min-width: 330px; }
+.ah-link { font-weight: 760; }
+.ah-link::after, .external-link::after { content: "↗"; display: inline-block; margin-left: .3em; font-size: .78em; text-decoration: none; }
+.focus-col { background: var(--accent-soft) !important; color: var(--ink); }
+thead .focus-col { background: var(--accent) !important; color: #fff; }
+.dim-col { opacity: .30; }
+
+ol, ul { padding-left: 1.35rem; }
+li { margin: .35rem 0; padding-left: .25rem; }
+ol li::marker { color: var(--accent); font-weight: 850; }
+
+.source-strip {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 14px;
+  align-items: start;
+  margin-top: 34px;
+  padding: 18px 20px;
+  border-radius: 16px;
+  background: var(--surface-2);
+  color: var(--muted);
+  font-size: .88rem;
+}
+.source-icon {
+  display: grid;
+  place-items: center;
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  background: var(--accent);
+  color: #fff;
+  font-weight: 900;
+}
+footer {
+  position: relative;
+  overflow: hidden;
+  padding: 54px 20px 46px;
+  background: linear-gradient(135deg, var(--hero-start), var(--hero-end));
+  color: rgba(255,255,255,.78);
+}
+.footer-inner {
+  width: min(var(--content), 100%);
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 26px;
+  align-items: end;
+}
+.footer-title { color: #fff; font-family: var(--display); font-size: 1.7rem; line-height: 1; text-transform: uppercase; }
+.footer-meta { margin-top: 8px; font-size: .82rem; }
+.back-top { color: #fff; font-weight: 800; text-decoration: none; }
+
+@media (max-width: 920px) {
+  .hero-inner { grid-template-columns: 1fr; padding-top: 64px; }
+  .hero-art { min-height: 300px; margin-top: -30px; opacity: .92; }
+  .hero-art svg { max-height: 360px; }
+  .validation-card { grid-template-columns: 1fr; }
+  .toc { display: none; }
+  .utility-inner { justify-content: center; }
+}
+@media (max-width: 640px) {
+  .hero-inner, main, .utility-inner { width: min(100% - 24px, var(--content)); }
+  .hero { min-height: auto; }
+  .hero-inner { min-height: auto; padding: 54px 0 42px; }
+  .hero h1 { font-size: clamp(2.7rem, 14vw, 4.6rem); }
+  .hero-art { min-height: 235px; }
+  .hero-art svg { max-height: 275px; }
+  .serving-label { display: none; }
+  .validation-card, .content-section { padding: 22px 18px; border-radius: 20px; }
+  .content-section > h2 { grid-template-columns: 1fr; gap: 7px; }
+  .content-section > h2::before { order: 2; }
+  th.label-col, td.label-col { min-width: 180px; }
+  .footer-inner { grid-template-columns: 1fr; }
+}
+
+@media print {
+  @page { size: A4 landscape; margin: 13mm; }
+  body { background: #fff; color: #000; font-size: 10.2pt; }
+  .hero { min-height: 0; background: #fff !important; color: #000; border-bottom: 3px solid #000; }
+  .hero::before, .hero-art, .hero-actions, .utility, footer { display: none !important; }
+  .hero-inner { width: 100%; min-height: 0; display: block; padding: 0 0 12mm; }
+  .eyebrow, .hero .deck { color: #333; }
+  .hero h1 { font-size: 31pt; line-height: .95; }
+  .chip-row { display: none; }
+  main { width: 100%; padding: 8mm 0 0; }
+  .validation-card, .content-section { box-shadow: none; break-inside: avoid-page; border: 1px solid #bbb; }
+  .content-section { margin-top: 7mm; padding: 6mm; }
+  .table-shell { overflow: visible; box-shadow: none; break-inside: avoid; }
+  table, table.product-table, table.compact-table { min-width: 0; font-size: 8.2pt; }
+  thead th, th.label-col, td.label-col { position: static; }
+  th, td { padding: 5px 6px; }
+  .dim-col { opacity: 1 !important; }
+  .focus-col { background: transparent !important; color: inherit !important; }
+  .note { break-inside: avoid; }
+  a { color: #000; text-decoration: none; }
+  a[href^="http"]::after { content: " (" attr(href) ")"; font-size: 7pt; word-break: break-all; }
+}
+</style>
+</head>
+<body class="theme-dessert" id="top">
+  <header class="hero">
+    <div class="hero-inner">
+      <div class="hero-copy">
+        <p class="eyebrow">Chef’s Choice 2026</p>
+        <h1>Mini Christmas Stollen with Cranberry Compote and Citrus Cream</h1>
+        <p class="deck">A festive individual dessert with warm fruit, bright citrus cream and a polished shopping guide for 6, 8, 10 or 12 guests.</p>
+        <div class="chip-row" aria-label="Recipe highlights">
+          <span class="chip">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M4 17h16M6 17a6 6 0 0 1 12 0M12 5v3"/><path d="M9 5h6"/></svg>
+            Kamado-ready
+          </span>
+          <span class="chip">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M8 12a4 4 0 1 0 8 0 4 4 0 0 0-8 0Z"/><path d="M4 21a8 8 0 0 1 16 0"/></svg>
+            6 · 8 · 10 · 12 guests
+          </span>
+          <span class="chip">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M4 5h16v14H4z"/><path d="M8 9h8M8 13h5"/></svg>
+            AH.nl shopping guide
+          </span>
+        </div>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#corrected-ingredient-quantities">View ingredients</a>
+          <button class="button button-secondary" type="button" onclick="window.print()">Print recipe</button>
+        </div>
+      </div>
+      <div class="hero-art">
+<svg viewBox="0 0 560 520" role="img" aria-label="Abstract mini Christmas stollen with cranberries and citrus">
+  <defs>
+    <radialGradient id="plate2" cx="48%" cy="38%" r="65%">
+      <stop offset="0" stop-color="#fffef7"/>
+      <stop offset=".72" stop-color="#f0e2d1"/>
+      <stop offset="1" stop-color="#d8bea4"/>
+    </radialGradient>
+    <linearGradient id="cake" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#e6a75e"/>
+      <stop offset=".45" stop-color="#bb6b32"/>
+      <stop offset="1" stop-color="#6f351e"/>
+    </linearGradient>
+    <linearGradient id="cream" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#fffdf1"/>
+      <stop offset="1" stop-color="#e8caa5"/>
+    </linearGradient>
+    <radialGradient id="cran" cx="34%" cy="30%" r="68%">
+      <stop offset="0" stop-color="#f55c70"/>
+      <stop offset=".55" stop-color="#b31335"/>
+      <stop offset="1" stop-color="#5e0b24"/>
+    </radialGradient>
+    <filter id="blur2"><feGaussianBlur stdDeviation="18"/></filter>
+  </defs>
+  <circle cx="96" cy="86" r="78" fill="#e38a39" opacity=".22" filter="url(#blur2)"/>
+  <circle cx="462" cy="110" r="92" fill="#d61f47" opacity=".24" filter="url(#blur2)"/>
+  <ellipse cx="282" cy="335" rx="235" ry="116" fill="#220a11" opacity=".32"/>
+  <ellipse cx="282" cy="316" rx="222" ry="112" fill="url(#plate2)"/>
+  <ellipse cx="282" cy="316" rx="178" ry="80" fill="none" stroke="#c8ad92" stroke-width="3" opacity=".7"/>
+  <g transform="translate(140 140)">
+    <path d="M44 155 C52 113 64 73 89 49 C113 27 157 27 181 49 C206 73 218 113 226 155 C211 177 63 177 44 155Z" fill="url(#cake)"/>
+    <ellipse cx="135" cy="60" rx="38" ry="25" fill="#5b2a1b"/>
+    <ellipse cx="135" cy="58" rx="24" ry="14" fill="#f3d6b4"/>
+    <path d="M66 82 C87 103 84 145 76 163 M98 58 C115 95 109 143 102 169 M172 58 C153 95 160 144 168 169 M204 82 C183 105 188 145 195 163" fill="none" stroke="#6e361f" stroke-width="9" opacity=".7" stroke-linecap="round"/>
+    <path d="M58 141 C89 151 181 152 215 141" fill="none" stroke="#f1bd75" stroke-width="5" opacity=".55"/>
+    <g fill="#fff9e9" opacity=".9">
+      <circle cx="78" cy="70" r="4"/><circle cx="95" cy="93" r="3"/><circle cx="119" cy="43" r="4"/>
+      <circle cx="151" cy="39" r="4"/><circle cx="181" cy="85" r="3"/><circle cx="198" cy="108" r="4"/>
+      <circle cx="88" cy="129" r="3"/><circle cx="141" cy="118" r="3"/><circle cx="171" cy="137" r="4"/>
+    </g>
+    <g fill="url(#cream)">
+      <path d="M91 50 C78 35 90 18 108 26 C117 11 140 15 143 34 C142 49 105 60 91 50Z"/>
+      <path d="M139 37 C142 18 166 15 174 31 C193 24 202 47 187 58 C169 66 140 54 139 37Z"/>
+    </g>
+    <g fill="url(#cran)">
+      <circle cx="122" cy="48" r="12"/><circle cx="145" cy="54" r="13"/><circle cx="163" cy="45" r="10"/>
+    </g>
+  </g>
+  <g>
+    <circle cx="120" cy="378" r="31" fill="#e28733"/>
+    <circle cx="120" cy="378" r="24" fill="#f4bd5e"/>
+    <path d="M120 354 V402 M96 378 H144 M103 361 L137 395 M137 361 L103 395" stroke="#fff4c9" stroke-width="3" opacity=".8"/>
+  </g>
+  <g fill="url(#cran)">
+    <circle cx="411" cy="355" r="19"/><circle cx="449" cy="373" r="15"/><circle cx="429" cy="398" r="18"/>
+  </g>
+  <g fill="#6f784b">
+    <ellipse cx="451" cy="335" rx="13" ry="30" transform="rotate(56 451 335)"/>
+    <ellipse cx="469" cy="341" rx="11" ry="27" transform="rotate(83 469 341)"/>
+  </g>
+  <g fill="#fff" opacity=".55">
+    <circle cx="82" cy="164" r="4"/><circle cx="455" cy="206" r="5"/><circle cx="498" cy="246" r="3"/><circle cx="86" cy="275" r="3"/>
+  </g>
+</svg>
+</div>
+    </div>
+  </header>
+
+  <div class="utility" aria-label="Recipe tools">
+    <div class="utility-inner">
+      <nav class="toc" aria-label="On this page">
+        <a href="#corrected-ingredient-quantities">Ingredient quantities</a><a href="#ah-nl-shopping-list">AH.nl shopping list</a><a href="#meat-tinsel-substitute-for-the-cranberry-compote">Meat Tinsel substitute for the cranberry compote</a><a href="#kamado-preparation">Kamado Preparation</a>
+      </nav>
+      <div class="serving-control" role="group" aria-label="Highlight a serving size">
+        <span class="serving-label">Highlight</span>
+        <button class="serving-button" data-size="all" type="button" aria-pressed="true">All</button>
+        <button class="serving-button" data-size="6" type="button" aria-pressed="false">6</button><button class="serving-button" data-size="8" type="button" aria-pressed="false">8</button><button class="serving-button" data-size="10" type="button" aria-pressed="false">10</button><button class="serving-button" data-size="12" type="button" aria-pressed="false">12</button>
+      </div>
+    </div>
+  </div>
+
+  <main>
+
+    <section aria-labelledby="corrected-ingredient-quantities" class="content-section"><h2 id="corrected-ingredient-quantities">Ingredient quantities</h2>
+<h3>Mini Christmas Stollen</h3>
+<div class="table-shell" tabindex="0"><table aria-label="Mini Christmas Stollen" class="ingredient-table" data-serving-table="true">
+<thead>
+<tr>
+<th class="label-col">Ingredient</th>
+<th data-serving="6" style="text-align:right">6 people</th>
+<th data-serving="8" style="text-align:right">8 people</th>
+<th data-serving="10" style="text-align:right">10 people</th>
+<th data-serving="12" style="text-align:right">12 people</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="label-col">Soft unsalted butter</td>
+<td data-serving="6" style="text-align:right"><strong>75 g</strong></td>
+<td data-serving="8" style="text-align:right"><strong>112.5 g</strong></td>
+<td data-serving="10" style="text-align:right"><strong>150 g</strong></td>
+<td data-serving="12" style="text-align:right"><strong>187.5 g</strong></td>
+</tr>
+<tr>
+<td class="label-col">Extra butter for greasing</td>
+<td data-serving="6" style="text-align:right">About <strong>10 g</strong></td>
+<td data-serving="8" style="text-align:right">About <strong>15 g</strong></td>
+<td data-serving="10" style="text-align:right">About <strong>20 g</strong></td>
+<td data-serving="12" style="text-align:right">About <strong>25 g</strong></td>
+</tr>
+<tr>
+<td class="label-col">Dried apricots</td>
+<td data-serving="6" style="text-align:right"><strong>37.5 g</strong></td>
+<td data-serving="8" style="text-align:right"><strong>56 g</strong></td>
+<td data-serving="10" style="text-align:right"><strong>75 g</strong></td>
+<td data-serving="12" style="text-align:right"><strong>94 g</strong></td>
+</tr>
+<tr>
+<td class="label-col">Fine granulated sugar</td>
+<td data-serving="6" style="text-align:right"><strong>60 g</strong></td>
+<td data-serving="8" style="text-align:right"><strong>90 g</strong></td>
+<td data-serving="10" style="text-align:right"><strong>120 g</strong></td>
+<td data-serving="12" style="text-align:right"><strong>150 g</strong></td>
+</tr>
+<tr>
+<td class="label-col">Beaten egg</td>
+<td data-serving="6" style="text-align:right"><strong>1½ eggs</strong>, about 75 g</td>
+<td data-serving="8" style="text-align:right"><strong>2¼ eggs</strong>, about 113 g</td>
+<td data-serving="10" style="text-align:right"><strong>3 eggs</strong>, about 150 g</td>
+<td data-serving="12" style="text-align:right"><strong>3¾ eggs</strong>, about 188 g</td>
+</tr>
+<tr>
+<td class="label-col">Plain flour</td>
+<td data-serving="6" style="text-align:right"><strong>37.5 g</strong></td>
+<td data-serving="8" style="text-align:right"><strong>56 g</strong></td>
+<td data-serving="10" style="text-align:right"><strong>75 g</strong></td>
+<td data-serving="12" style="text-align:right"><strong>94 g</strong></td>
+</tr>
+<tr>
+<td class="label-col">Extra flour for dusting</td>
+<td data-serving="6" style="text-align:right">As needed</td>
+<td data-serving="8" style="text-align:right">As needed</td>
+<td data-serving="10" style="text-align:right">As needed</td>
+<td data-serving="12" style="text-align:right">As needed</td>
+</tr>
+<tr>
+<td class="label-col">Self-raising flour</td>
+<td data-serving="6" style="text-align:right"><strong>60 g</strong></td>
+<td data-serving="8" style="text-align:right"><strong>90 g</strong></td>
+<td data-serving="10" style="text-align:right"><strong>120 g</strong></td>
+<td data-serving="12" style="text-align:right"><strong>150 g</strong></td>
+</tr>
+<tr>
+<td class="label-col">Dried cranberries</td>
+<td data-serving="6" style="text-align:right"><strong>37.5 g</strong></td>
+<td data-serving="8" style="text-align:right"><strong>56 g</strong></td>
+<td data-serving="10" style="text-align:right"><strong>75 g</strong></td>
+<td data-serving="12" style="text-align:right"><strong>94 g</strong></td>
+</tr>
+<tr>
+<td class="label-col">Ground cinnamon</td>
+<td data-serving="6" style="text-align:right"><strong>¾ tsp</strong></td>
+<td data-serving="8" style="text-align:right"><strong>1⅛ tsp</strong></td>
+<td data-serving="10" style="text-align:right"><strong>1½ tsp</strong></td>
+<td data-serving="12" style="text-align:right"><strong>1⅞ tsp</strong></td>
+</tr>
+<tr>
+<td class="label-col">Boerenjongens</td>
+<td data-serving="6" style="text-align:right"><strong>37.5 g</strong></td>
+<td data-serving="8" style="text-align:right"><strong>56 g</strong></td>
+<td data-serving="10" style="text-align:right"><strong>75 g</strong></td>
+<td data-serving="12" style="text-align:right"><strong>94 g</strong></td>
+</tr>
+<tr>
+<td class="label-col">Icing sugar for finishing</td>
+<td data-serving="6" style="text-align:right">As needed</td>
+<td data-serving="8" style="text-align:right">As needed</td>
+<td data-serving="10" style="text-align:right">As needed</td>
+<td data-serving="12" style="text-align:right">As needed</td>
+</tr>
+</tbody>
+</table></div>
+<h3>Cranberry compote</h3>
+<div class="table-shell" tabindex="0"><table aria-label="Cranberry compote" class="ingredient-table" data-serving-table="true">
+<thead>
+<tr>
+<th class="label-col">Ingredient</th>
+<th data-serving="6" style="text-align:right">6 people</th>
+<th data-serving="8" style="text-align:right">8 people</th>
+<th data-serving="10" style="text-align:right">10 people</th>
+<th data-serving="12" style="text-align:right">12 people</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="label-col">Frozen cranberries</td>
+<td data-serving="6" style="text-align:right"><strong>75 g</strong></td>
+<td data-serving="8" style="text-align:right"><strong>112.5 g</strong></td>
+<td data-serving="10" style="text-align:right"><strong>150 g</strong></td>
+<td data-serving="12" style="text-align:right"><strong>187.5 g</strong></td>
+</tr>
+<tr>
+<td class="label-col">Dried apricots</td>
+<td data-serving="6" style="text-align:right"><strong>22.5 g</strong></td>
+<td data-serving="8" style="text-align:right"><strong>34 g</strong></td>
+<td data-serving="10" style="text-align:right"><strong>45 g</strong></td>
+<td data-serving="12" style="text-align:right"><strong>56 g</strong></td>
+</tr>
+<tr>
+<td class="label-col">Red port</td>
+<td data-serving="6" style="text-align:right"><strong>45 ml</strong></td>
+<td data-serving="8" style="text-align:right"><strong>67.5 ml</strong></td>
+<td data-serving="10" style="text-align:right"><strong>90 ml</strong></td>
+<td data-serving="12" style="text-align:right"><strong>112.5 ml</strong></td>
+</tr>
+<tr>
+<td class="label-col">Fine granulated sugar</td>
+<td data-serving="6" style="text-align:right"><strong>30 g</strong></td>
+<td data-serving="8" style="text-align:right"><strong>45 g</strong></td>
+<td data-serving="10" style="text-align:right"><strong>60 g</strong></td>
+<td data-serving="12" style="text-align:right"><strong>75 g</strong></td>
+</tr>
+<tr>
+<td class="label-col">Meat Tinsel</td>
+<td data-serving="6" style="text-align:right">As needed</td>
+<td data-serving="8" style="text-align:right">As needed</td>
+<td data-serving="10" style="text-align:right">As needed</td>
+<td data-serving="12" style="text-align:right">As needed</td>
+</tr>
+</tbody>
+</table></div>
+<h3>Citrus cream and serving</h3>
+<p class="note">The source gives the zest and icing sugar only as <em>naar behoefte</em>. These are practical starting quantities.</p>
+<div class="table-shell" tabindex="0"><table aria-label="Citrus cream and serving" class="ingredient-table" data-serving-table="true">
+<thead>
+<tr>
+<th class="label-col">Ingredient</th>
+<th data-serving="6" style="text-align:right">6 people</th>
+<th data-serving="8" style="text-align:right">8 people</th>
+<th data-serving="10" style="text-align:right">10 people</th>
+<th data-serving="12" style="text-align:right">12 people</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="label-col">Crème fraîche</td>
+<td data-serving="6" style="text-align:right"><strong>75 g</strong></td>
+<td data-serving="8" style="text-align:right"><strong>112.5 g</strong></td>
+<td data-serving="10" style="text-align:right"><strong>150 g</strong></td>
+<td data-serving="12" style="text-align:right"><strong>187.5 g</strong></td>
+</tr>
+<tr>
+<td class="label-col">Finely grated orange zest</td>
+<td data-serving="6" style="text-align:right">Start with <strong>1 tsp</strong></td>
+<td data-serving="8" style="text-align:right">Start with <strong>1½ tsp</strong></td>
+<td data-serving="10" style="text-align:right">Start with <strong>2 tsp</strong></td>
+<td data-serving="12" style="text-align:right">Start with <strong>2½ tsp</strong></td>
+</tr>
+<tr>
+<td class="label-col">Finely grated lemon zest</td>
+<td data-serving="6" style="text-align:right">Start with <strong>½ tsp</strong></td>
+<td data-serving="8" style="text-align:right">Start with <strong>¾ tsp</strong></td>
+<td data-serving="10" style="text-align:right">Start with <strong>1 tsp</strong></td>
+<td data-serving="12" style="text-align:right">Start with <strong>1¼ tsp</strong></td>
+</tr>
+<tr>
+<td class="label-col">Icing sugar in the cream</td>
+<td data-serving="6" style="text-align:right">Start with <strong>10–15 g</strong></td>
+<td data-serving="8" style="text-align:right">Start with <strong>15–22 g</strong></td>
+<td data-serving="10" style="text-align:right">Start with <strong>20–30 g</strong></td>
+<td data-serving="12" style="text-align:right">Start with <strong>25–37.5 g</strong></td>
+</tr>
+<tr>
+<td class="label-col">Vanilla ice cream</td>
+<td data-serving="6" style="text-align:right"><strong>4 scoops</strong></td>
+<td data-serving="8" style="text-align:right"><strong>6 scoops</strong></td>
+<td data-serving="10" style="text-align:right"><strong>8 scoops</strong></td>
+<td data-serving="12" style="text-align:right"><strong>10 scoops</strong></td>
+</tr>
+</tbody>
+</table></div>
+<h3>Useful totals for shopping</h3>
+<div class="table-shell" tabindex="0"><table aria-label="Useful totals for shopping" class="ingredient-table" data-serving-table="true">
+<thead>
+<tr>
+<th class="label-col">Ingredient</th>
+<th data-serving="6" style="text-align:right">6 people</th>
+<th data-serving="8" style="text-align:right">8 people</th>
+<th data-serving="10" style="text-align:right">10 people</th>
+<th data-serving="12" style="text-align:right">12 people</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="label-col">Total dried apricots</td>
+<td data-serving="6" style="text-align:right"><strong>60 g</strong></td>
+<td data-serving="8" style="text-align:right"><strong>90 g</strong></td>
+<td data-serving="10" style="text-align:right"><strong>120 g</strong></td>
+<td data-serving="12" style="text-align:right"><strong>150 g</strong></td>
+</tr>
+<tr>
+<td class="label-col">Total fine granulated sugar</td>
+<td data-serving="6" style="text-align:right"><strong>90 g</strong></td>
+<td data-serving="8" style="text-align:right"><strong>135 g</strong></td>
+<td data-serving="10" style="text-align:right"><strong>180 g</strong></td>
+<td data-serving="12" style="text-align:right"><strong>225 g</strong></td>
+</tr>
+<tr>
+<td class="label-col">Total butter including greasing</td>
+<td data-serving="6" style="text-align:right">About <strong>85 g</strong></td>
+<td data-serving="8" style="text-align:right">About <strong>127.5 g</strong></td>
+<td data-serving="10" style="text-align:right">About <strong>170 g</strong></td>
+<td data-serving="12" style="text-align:right">About <strong>212.5 g</strong></td>
+</tr>
+</tbody>
+</table></div>
+<hr/>
+</section><section aria-labelledby="ah-nl-shopping-list" class="content-section"><h2 id="ah-nl-shopping-list">AH.nl shopping list</h2>
+<div class="table-shell" tabindex="0"><table aria-label="AH.nl shopping list" class="product-table" data-serving-table="true">
+<thead>
+<tr>
+<th class="label-col">AH product</th>
+<th data-serving="6" style="text-align:right">Buy for 6</th>
+<th data-serving="8" style="text-align:right">Buy for 8</th>
+<th data-serving="10" style="text-align:right">Buy for 10</th>
+<th data-serving="12" style="text-align:right">Buy for 12</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="label-col"><a class="ah-link" href="https://www.ah.nl/producten/product/wi193236/ah-roomboter-ongezouten" rel="noopener noreferrer" target="_blank">AH Roomboter ongezouten, 250 g</a></td>
+<td data-serving="6" style="text-align:right"><strong>1 pack</strong></td>
+<td data-serving="8" style="text-align:right"><strong>1 pack</strong></td>
+<td data-serving="10" style="text-align:right"><strong>1 pack</strong></td>
+<td data-serving="12" style="text-align:right"><strong>1 pack</strong></td>
+</tr>
+<tr>
+<td class="label-col"><a class="ah-link" href="https://www.ah.nl/producten/product/wi388601/ah-gewelde-gedroogde-abrikozen" rel="noopener noreferrer" target="_blank">AH Gewelde gedroogde abrikozen, 250 g</a></td>
+<td data-serving="6" style="text-align:right"><strong>1 pack</strong></td>
+<td data-serving="8" style="text-align:right"><strong>1 pack</strong></td>
+<td data-serving="10" style="text-align:right"><strong>1 pack</strong></td>
+<td data-serving="12" style="text-align:right"><strong>1 pack</strong></td>
+</tr>
+<tr>
+<td class="label-col"><a class="ah-link" href="https://www.ah.nl/producten/product/wi196936/van-gilse-kristalsuiker-fijn" rel="noopener noreferrer" target="_blank">Van Gilse Kristalsuiker fijn, 500 g</a></td>
+<td data-serving="6" style="text-align:right"><strong>1 pack</strong></td>
+<td data-serving="8" style="text-align:right"><strong>1 pack</strong></td>
+<td data-serving="10" style="text-align:right"><strong>1 pack</strong></td>
+<td data-serving="12" style="text-align:right"><strong>1 pack</strong></td>
+</tr>
+<tr>
+<td class="label-col"><a class="ah-link" href="https://www.ah.nl/producten/product/wi1521/verse-scharreleieren-m" rel="noopener noreferrer" target="_blank">AH Scharreleieren M, 6</a></td>
+<td data-serving="6" style="text-align:right"><strong>1 box</strong></td>
+<td data-serving="8" style="text-align:right"><strong>1 box</strong></td>
+<td data-serving="10" style="text-align:right"><strong>1 box</strong></td>
+<td data-serving="12" style="text-align:right"><strong>1 box</strong></td>
+</tr>
+<tr>
+<td class="label-col"><a class="ah-link" href="https://www.ah.nl/producten/product/wi952/ah-patent-tarwebloem" rel="noopener noreferrer" target="_blank">AH Patent tarwebloem, 500 g</a></td>
+<td data-serving="6" style="text-align:right"><strong>1 pack</strong></td>
+<td data-serving="8" style="text-align:right"><strong>1 pack</strong></td>
+<td data-serving="10" style="text-align:right"><strong>1 pack</strong></td>
+<td data-serving="12" style="text-align:right"><strong>1 pack</strong></td>
+</tr>
+<tr>
+<td class="label-col"><a class="ah-link" href="https://www.ah.nl/producten/product/wi550408/zelfrijzend-bakmeel" rel="noopener noreferrer" target="_blank">Koopmans Zelfrijzend bakmeel, 500 g</a></td>
+<td data-serving="6" style="text-align:right"><strong>1 pack</strong></td>
+<td data-serving="8" style="text-align:right"><strong>1 pack</strong></td>
+<td data-serving="10" style="text-align:right"><strong>1 pack</strong></td>
+<td data-serving="12" style="text-align:right"><strong>1 pack</strong></td>
+</tr>
+<tr>
+<td class="label-col"><a class="ah-link" href="https://www.ah.nl/producten/product/wi164756/ah-cranberries" rel="noopener noreferrer" target="_blank">AH Cranberries, dried, 250 g</a></td>
+<td data-serving="6" style="text-align:right"><strong>1 pack</strong></td>
+<td data-serving="8" style="text-align:right"><strong>1 pack</strong></td>
+<td data-serving="10" style="text-align:right"><strong>1 pack</strong></td>
+<td data-serving="12" style="text-align:right"><strong>1 pack</strong></td>
+</tr>
+<tr>
+<td class="label-col"><a class="ah-link" href="https://www.ah.nl/producten/product/wi197971/kaneel-gemalen" rel="noopener noreferrer" target="_blank">AH Kaneel gemalen, 45 g</a></td>
+<td data-serving="6" style="text-align:right"><strong>1 jar</strong></td>
+<td data-serving="8" style="text-align:right"><strong>1 jar</strong></td>
+<td data-serving="10" style="text-align:right"><strong>1 jar</strong></td>
+<td data-serving="12" style="text-align:right"><strong>1 jar</strong></td>
+</tr>
+<tr>
+<td class="label-col"><a class="ah-link" href="https://www.ah.nl/producten/product/wi127243/eliterna-boerenjongens" rel="noopener noreferrer" target="_blank">Eliterna Boerenjongens, 0.5 litre</a></td>
+<td data-serving="6" style="text-align:right"><strong>1 jar</strong></td>
+<td data-serving="8" style="text-align:right"><strong>1 jar</strong></td>
+<td data-serving="10" style="text-align:right"><strong>1 jar</strong></td>
+<td data-serving="12" style="text-align:right"><strong>1 jar</strong></td>
+</tr>
+<tr>
+<td class="label-col"><a class="ah-link" href="https://www.ah.nl/producten/product/wi187619/van-gilse-poedersuiker" rel="noopener noreferrer" target="_blank">Van Gilse Poedersuiker, 250 g</a></td>
+<td data-serving="6" style="text-align:right"><strong>1 pack</strong></td>
+<td data-serving="8" style="text-align:right"><strong>1 pack</strong></td>
+<td data-serving="10" style="text-align:right"><strong>1 pack</strong></td>
+<td data-serving="12" style="text-align:right"><strong>1 pack</strong></td>
+</tr>
+<tr>
+<td class="label-col"><a class="ah-link" href="https://www.ah.nl/producten/product/wi203240/ah-doosje-met-cranberries" rel="noopener noreferrer" target="_blank">AH Doosje met cranberries, frozen, 250 g</a></td>
+<td data-serving="6" style="text-align:right"><strong>1 box</strong></td>
+<td data-serving="8" style="text-align:right"><strong>1 box</strong></td>
+<td data-serving="10" style="text-align:right"><strong>1 box</strong></td>
+<td data-serving="12" style="text-align:right"><strong>1 box</strong></td>
+</tr>
+<tr>
+<td class="label-col"><a class="ah-link" href="https://www.ah.nl/producten/product/wi171583/sobreiro-port-ruby" rel="noopener noreferrer" target="_blank">Sobreiro Port Ruby, 750 ml</a></td>
+<td data-serving="6" style="text-align:right"><strong>1 bottle</strong></td>
+<td data-serving="8" style="text-align:right"><strong>1 bottle</strong></td>
+<td data-serving="10" style="text-align:right"><strong>1 bottle</strong></td>
+<td data-serving="12" style="text-align:right"><strong>1 bottle</strong></td>
+</tr>
+<tr>
+<td class="label-col"><a class="ah-link" href="https://www.ah.nl/producten/product/wi557187/verstegen-world-spice-blend-pumpkin-spice" rel="noopener noreferrer" target="_blank">Verstegen World Spice Blend Pumpkin Spice, 37 g</a></td>
+<td data-serving="6" style="text-align:right"><strong>1 jar</strong></td>
+<td data-serving="8" style="text-align:right"><strong>1 jar</strong></td>
+<td data-serving="10" style="text-align:right"><strong>1 jar</strong></td>
+<td data-serving="12" style="text-align:right"><strong>1 jar</strong></td>
+</tr>
+<tr>
+<td class="label-col"><a class="ah-link" href="https://www.ah.nl/producten/product/wi195849/de-zaanse-hoeve-creme-fraiche" rel="noopener noreferrer" target="_blank">De Zaanse Hoeve Crème fraîche, 200 g</a></td>
+<td data-serving="6" style="text-align:right"><strong>1 tub</strong></td>
+<td data-serving="8" style="text-align:right"><strong>1 tub</strong></td>
+<td data-serving="10" style="text-align:right"><strong>1 tub</strong></td>
+<td data-serving="12" style="text-align:right"><strong>1 tub, tight</strong></td>
+</tr>
+<tr>
+<td class="label-col"><a class="ah-link" href="https://www.ah.nl/producten/product/wi235083/ah-handsinaasappel-los" rel="noopener noreferrer" target="_blank">AH Handsinaasappel</a></td>
+<td data-serving="6" style="text-align:right"><strong>1 orange</strong></td>
+<td data-serving="8" style="text-align:right"><strong>1 orange</strong></td>
+<td data-serving="10" style="text-align:right"><strong>1 orange</strong></td>
+<td data-serving="12" style="text-align:right"><strong>1 large orange</strong></td>
+</tr>
+<tr>
+<td class="label-col"><a class="ah-link" href="https://www.ah.nl/producten/product/wi577892/ah-biologisch-citroenen" rel="noopener noreferrer" target="_blank">AH Biologisch Citroenen, 300 g</a></td>
+<td data-serving="6" style="text-align:right"><strong>1 pack</strong></td>
+<td data-serving="8" style="text-align:right"><strong>1 pack</strong></td>
+<td data-serving="10" style="text-align:right"><strong>1 pack</strong></td>
+<td data-serving="12" style="text-align:right"><strong>1 pack</strong></td>
+</tr>
+<tr>
+<td class="label-col"><a class="ah-link" href="https://www.ah.nl/producten/product/wi759/ah-roomijs-vanille" rel="noopener noreferrer" target="_blank">AH Roomijs vanille, 1 litre</a></td>
+<td data-serving="6" style="text-align:right"><strong>1 tub</strong></td>
+<td data-serving="8" style="text-align:right"><strong>1 tub</strong></td>
+<td data-serving="10" style="text-align:right"><strong>1 tub</strong></td>
+<td data-serving="12" style="text-align:right"><strong>2 tubs</strong></td>
+</tr>
+</tbody>
+</table></div>
+<p class="note">The 200 g crème-fraîche tub is sufficient for the 187.5 g 12-person quantity, but only leaves a small margin.</p>
+<p class="note">The boerenjongens and port contain alcohol. Keep that in mind when serving guests who avoid alcohol.</p>
+<p class="note">AH’s apricots are soaked dried apricots containing added water. Pat the portion intended for the cake batter dry before chopping so that the additional moisture does not make the cakes heavy.</p>
+<hr/>
+</section><section aria-labelledby="meat-tinsel-substitute-for-the-cranberry-compote" class="content-section"><h2 id="meat-tinsel-substitute-for-the-cranberry-compote">Meat Tinsel substitute for the cranberry compote</h2>
+<p class="note">Because the compote already contains sugar, this approximation does not add extra sugar beyond the recipe quantity.</p>
+<div class="table-shell" tabindex="0"><table aria-label="Meat Tinsel substitute for the cranberry compote" class="ingredient-table" data-serving-table="true">
+<thead>
+<tr>
+<th class="label-col">Ingredient</th>
+<th data-serving="6" style="text-align:right">6 people</th>
+<th data-serving="8" style="text-align:right">8 people</th>
+<th data-serving="10" style="text-align:right">10 people</th>
+<th data-serving="12" style="text-align:right">12 people</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="label-col">Verstegen Pumpkin Spice</td>
+<td data-serving="6" style="text-align:right"><strong>½ tsp</strong></td>
+<td data-serving="8" style="text-align:right"><strong>¾ tsp</strong></td>
+<td data-serving="10" style="text-align:right"><strong>1 tsp</strong></td>
+<td data-serving="12" style="text-align:right"><strong>1¼ tsp</strong></td>
+</tr>
+<tr>
+<td class="label-col">Finely grated orange zest</td>
+<td data-serving="6" style="text-align:right"><strong>¼ tsp</strong></td>
+<td data-serving="8" style="text-align:right"><strong>⅜–½ tsp</strong></td>
+<td data-serving="10" style="text-align:right"><strong>½ tsp</strong></td>
+<td data-serving="12" style="text-align:right"><strong>⅝ tsp</strong></td>
+</tr>
+<tr>
+<td class="label-col">Ground black pepper</td>
+<td data-serving="6" style="text-align:right">Tiny pinch</td>
+<td data-serving="8" style="text-align:right">Small pinch</td>
+<td data-serving="10" style="text-align:right">Generous pinch</td>
+<td data-serving="12" style="text-align:right"><strong>1–2 generous pinches</strong></td>
+</tr>
+<tr>
+<td class="label-col">Cayenne or chilli</td>
+<td data-serving="6" style="text-align:right">Tiny pinch</td>
+<td data-serving="8" style="text-align:right">Small pinch</td>
+<td data-serving="10" style="text-align:right">Generous pinch</td>
+<td data-serving="12" style="text-align:right"><strong>1–2 generous pinches</strong></td>
+</tr>
+<tr>
+<td class="label-col">Fine salt</td>
+<td data-serving="6" style="text-align:right">Tiny pinch</td>
+<td data-serving="8" style="text-align:right">Small pinch</td>
+<td data-serving="10" style="text-align:right">Generous pinch</td>
+<td data-serving="12" style="text-align:right"><strong>1–2 generous pinches</strong></td>
+</tr>
+</tbody>
+</table></div>
+<p class="note">The Verstegen blend supplies cinnamon, ginger, nutmeg, cloves, allspice and cardamom.</p>
+<p class="note">Add approximately half at the beginning. Taste after the compote has simmered and add the remainder only when necessary.</p>
+<hr/>
+</section><section aria-labelledby="kamado-preparation" class="content-section"><h2 id="kamado-preparation">Kamado Preparation</h2>
+<p class="note">The source bakes the mini Christmas stollen indirectly at <strong>190°C for 20–25 minutes</strong>, simmers the compote for approximately ten minutes and finishes the dessert with whipped citrus crème fraîche and vanilla ice cream.</p>
+<h3>Mini Christmas Stollen</h3>
+<ol>
+<li>Bring the butter to room temperature.</li>
+<li>Beat the butter and fine sugar together until noticeably paler and lighter.</li>
+<li>Beat the eggs together separately.</li>
+<li>Gradually add the required weight of egg while continuing to mix.</li>
+<li>Sift the plain flour and self-raising flour together.</li>
+<li>Fold the flours into the butter mixture.</li>
+<li>Mix in the cinnamon.</li>
+<li>Finely dice the cake portion of dried apricots and fold them into the batter.</li>
+<li>Lightly drain the boerenjongens. Do not squeeze them completely dry.</li>
+<li>Fold in the boerenjongens and dried cranberries.</li>
+<li>Grease the mini-tulband mould thoroughly with butter and dust it with flour.</li>
+<li>Fill each cavity to the <strong>same level that worked during your test batch</strong>.</li>
+<li>Bake indirectly at <strong>190°C for approximately 20–25 minutes</strong>.</li>
+<li>Begin checking at 20 minutes. A skewer should not carry wet batter, although it may pick up some moisture from the fruit.</li>
+<li>Rest the cakes in the mould for approximately <strong>5–8 minutes</strong> before turning them out.</li>
+</ol>
+<p class="note">Larger quantities produce more cakes, not larger individual cakes. Keep the cavity fill level and the per-batch cooking time unchanged, and bake in additional rounds.</p>
+<h3>Practical egg measurements</h3>
+<div class="table-shell" tabindex="0"><table aria-label="Practical egg measurements" class="compact-table">
+<thead>
+<tr>
+<th>Servings</th>
+<th>Method</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>6</td>
+<td>Beat <strong>2 eggs</strong> and weigh out approximately <strong>75 g</strong></td>
+</tr>
+<tr>
+<td>8</td>
+<td>Beat <strong>3 eggs</strong> and weigh out approximately <strong>113 g</strong></td>
+</tr>
+<tr>
+<td>10</td>
+<td>Use approximately <strong>150 g</strong>, normally about 3 medium eggs without shells</td>
+</tr>
+<tr>
+<td>12</td>
+<td>Beat <strong>4 eggs</strong> and weigh out approximately <strong>188 g</strong></td>
+</tr>
+</tbody>
+</table></div>
+<p class="note">Weighing the egg is more reliable than trying to divide the yolk and white visually.</p>
+<h3>Cranberry compote</h3>
+<ol>
+<li>Finely dice the compote portion of the dried apricots.</li>
+<li>Put the frozen cranberries, apricots, port, sugar and approximately half the Meat Tinsel substitute into a stainless-steel saucepan.</li>
+<li>Simmer gently for approximately <strong>10 minutes</strong>.</li>
+<li>Stir occasionally.</li>
+<li>Lightly crush only some of the cranberries, leaving others intact for texture.</li>
+<li>Taste and add more seasoning only when needed.</li>
+<li>Let the compote cool if preparing it in advance.</li>
+<li>Reheat gently before serving.</li>
+<li>Spoon the warm compote into the centre of each mini Christmas stollen.</li>
+</ol>
+<h3>Citrus cream</h3>
+<ol>
+<li>Put the crème fraîche in a cold bowl.</li>
+<li>Whip it only until it becomes somewhat firmer.</li>
+<li>Add the orange and lemon zest from the table.</li>
+<li>Add the initial quantity of icing sugar.</li>
+<li>Taste and adjust until the cream is fresh, lightly sweet and clearly citrus-flavoured.</li>
+<li>Transfer it to a piping bag or spoon it onto the cakes.</li>
+<li>Dust the mini Christmas stollen with icing sugar.</li>
+<li>Serve with the warm cranberry compote and the quantity of vanilla ice cream listed in the table.</li>
+</ol>
+</section>
+
+    <div class="source-strip">
+      <div class="source-icon" aria-hidden="true">i</div>
+      <div><strong>Source note.</strong> The original Chef’s Choice 2026 dessert appears on pages 18–19. This edition retains your validated quantities and serving labels while preserving the source preparation method.</div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+      <div>
+        <div class="footer-title">Mini Christmas Stollen with Cranberry Compote and Citrus Cream</div>
+        <div class="footer-meta">Self-contained HTML · Inline design, responsive tables and print styling · AH.nl links open in a new tab</div>
+      </div>
+      <a class="back-top" href="#top">Back to top ↑</a>
+    </div>
+  </footer>
+
+  <script>
+  (() => {
+    const buttons = Array.from(document.querySelectorAll('.serving-button'));
+    const cells = Array.from(document.querySelectorAll('[data-serving]'));
+    const apply = (size) => {
+      buttons.forEach((button) => button.setAttribute('aria-pressed', String(button.dataset.size === size)));
+      cells.forEach((cell) => {
+        cell.classList.remove('focus-col', 'dim-col');
+        if (size !== 'all') {
+          cell.classList.add(cell.dataset.serving === size ? 'focus-col' : 'dim-col');
+        }
+      });
+    };
+    buttons.forEach((button) => button.addEventListener('click', () => apply(button.dataset.size)));
+  })();
+  </script>
+</body>
+</html>
